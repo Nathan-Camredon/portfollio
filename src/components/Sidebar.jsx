@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import projectData from '../data/projects.json';
 const { categories, projects } = projectData;
 
-const Sidebar = ({ activeProject, setActiveProject }) => {
+const Sidebar = ({ activeProject, setActiveProject, isSidebarOpen, setIsSidebarOpen }) => {
   const [openCategories, setOpenCategories] = useState({
     Scolaire: true,
     Perso: true
@@ -21,7 +21,7 @@ const Sidebar = ({ activeProject, setActiveProject }) => {
   );
 
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
       <div className="sidebar-header">
         <input 
           type="text" 

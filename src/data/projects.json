@@ -16,8 +16,14 @@
         "creationDate": "Avril 2024"
       },
       "github": "https://github.com",
-      "rawMarkdownUrl": null,
-      "markdownContent": "# Une Vie De Fourmi\n\nBienvenue dans le projet **Une Vie De Fourmi** !\nC'est un projet scolaire développé en `C++` visant à simuler le comportement d'une colonie de fourmis.\n\n## Fonctionnalités\n- Algorithmes de recherche de nourriture (Pheromones).\n- Gestion de la colonie (reine, ouvrières, soldats).\n- Interface graphique minimaliste.\n\n### Exemple de code\n```cpp\nvoid Ant::updatePosition() {\n    this->x += this->vx;\n    this->y += this->vy;\n}\n```\n\n> Un projet fascinant sur l'intelligence en essaim."
+      "markdownContent": "# Une Vie De Fourmi\n\nSimulation de colonie de fourmis en C++.\n\n## Fonctionnalités\n- Algorithmes de recherche de nourriture basés sur les phéromones.\n- Gestion des castes (reine, ouvrières, soldats).\n- Interface graphique minimaliste.",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1284",
+          "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=200"
+        }
+      ]
     },
     {
       "id": "portfolio-v1",
@@ -30,9 +36,254 @@
         "status": "Terminé",
         "creationDate": "Mai 2026"
       },
-      "github": "https://github.com",
-      "rawMarkdownUrl": null,
-      "markdownContent": "# Steam Portfolio\n\nMon portfolio personnel, conçu pour ressembler à la bibliothèque Steam.\n\n## Pourquoi ce design ?\nSteam a une interface sombre, élégante et très orientée \"collection\". C'est parfait pour présenter des projets informatiques comme on présenterait une collection de jeux vidéo !\n\n## Stack Technique\n* Vite\n* React\n* Vanilla CSS"
+      "github": "https://github.com/Nathan-Camredon/portfollio",
+      "markdownContent": "# Steam Portfolio\n\nMon portfolio personnel conçu pour ressembler à la bibliothèque Steam."
+    },
+    {
+      "id": "budget-buddy",
+      "title": "Budget Buddy",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1170&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "Python / JS",
+        "status": "Terminé",
+        "creationDate": "Mars 2026"
+      },
+      "github": "https://github.com/Nathan-Camredon/budget_buddy",
+      "markdownContent": "# Budget Buddy\n\nApplication personnelle de gestion de budget et de suivi des dépenses."
+    },
+    {
+      "id": "fruit-slicer",
+      "title": "Fruit Slicer",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=1170&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "Python",
+        "status": "Terminé",
+        "creationDate": "Janvier 2026"
+      },
+      "github": "https://github.com/Nathan-Camredon/fruit-slicer",
+      "markdownContent": "# Fruit Slicer\n\nJeu d'arcade inspiré du célèbre Fruit Ninja codé en Python."
+    },
+    {
+      "id": "hangman",
+      "title": "Hangman (Pendu)",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=1170&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "Python",
+        "status": "Terminé",
+        "creationDate": "Janvier 2026"
+      },
+      "github": "https://github.com/Nathan-Camredon/Hangman",
+      "markdownContent": "# Hangman (Pendu)\n\nJeu classique du pendu réalisé en Python dans le cadre de projets d'apprentissage."
+    },
+    {
+      "id": "laplateforme-tracker",
+      "title": "LaPlateforme Tracker",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1170&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "Java",
+        "status": "Terminé",
+        "creationDate": "Avril 2026"
+      },
+      "github": "https://github.com/Nathan-Camredon/LaplateformeTracker",
+      "markdownContent": "# LaPlateforme Tracker\n\nApplication de suivi et de gestion d'activités pour la formation à LaPlateforme, développée en Java."
+    },
+    {
+      "id": "pokemon",
+      "title": "Pokémon Game",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1074&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "Python",
+        "status": "Terminé",
+        "creationDate": "Février 2026"
+      },
+      "github": "https://github.com/Nathan-Camredon/Pokemon",
+      "markdownContent": "# Pokémon\n\nJeu de combat et d'exploration Pokémon développé en Python (Pygame).",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1074",
+          "thumbnail": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=200"
+        },
+        {
+          "type": "image",
+          "url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1170",
+          "thumbnail": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=200"
+        }
+      ]
+    },
+    {
+      "id": "calculatrice",
+      "title": "Calculatrice",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=1170&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "Python / JS",
+        "status": "Terminé",
+        "creationDate": "Janvier 2026"
+      },
+      "github": "https://github.com/Nathan-Camredon/School_project",
+      "markdownContent": "# Calculatrice\n\nProjet de calculatrice fonctionnelle développé dans le cadre scolaire."
+    },
+    {
+      "id": "clock",
+      "title": "Clock (Horloge)",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?q=80&w=1170&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "HTML / CSS / JS",
+        "status": "Terminé",
+        "creationDate": "Janvier 2026"
+      },
+      "github": "https://github.com/Nathan-Camredon/School_project",
+      "markdownContent": "# Clock\n\nApplication d'horloge numérique/analogique interactive."
+    },
+    {
+      "id": "villanova",
+      "title": "VillaNova (Certification)",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "HTML / SCSS",
+        "status": "Terminé",
+        "creationDate": "Mai 2026"
+      },
+      "github": "https://github.com/Nathan-Camredon/VillaNova",
+      "markdownContent": "# VillaNova\n\nProjet d'intégration web moderne avec SCSS validant ma certification."
+    },
+    {
+      "id": "zeri-bot",
+      "title": "Zeri Bot",
+      "category": "Perso",
+      "banner": "https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=1170&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "Python",
+        "status": "Terminé",
+        "creationDate": "Décembre 2025"
+      },
+      "github": "https://github.com/Nathan-Camredon/zeri_bot",
+      "markdownContent": "# Zeri Bot\n\nBot Discord thématique (League of Legends) codé en Python."
+    },
+    {
+      "id": "bank",
+      "title": "Bank Application",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?q=80&w=1170&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "Python",
+        "status": "Terminé",
+        "creationDate": "2026"
+      },
+      "github": "https://github.com/Nathan-Camredon",
+      "markdownContent": "# Bank Application\n\nSystème bancaire simulé en Python avec authentification, transactions et tableau de bord."
+    },
+    {
+      "id": "demineur",
+      "title": "Démineur",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1447069387593-a5de0862481e?q=80&w=1169&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1447069387593-a5de0862481e?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "Python",
+        "status": "Terminé",
+        "creationDate": "2026"
+      },
+      "github": "https://github.com/Nathan-Camredon",
+      "markdownContent": "# Démineur\n\nRecréation fidèle du célèbre jeu de réflexion Windows Démineur en Python."
+    },
+    {
+      "id": "draftgap",
+      "title": "DraftGap Helper",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=1265&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "Python / JS",
+        "status": "Terminé",
+        "creationDate": "2026"
+      },
+      "github": "https://github.com/Nathan-Camredon",
+      "markdownContent": "# DraftGap Helper\n\nApplication web d'aide à la phase de draft (choix des champions) pour les jeux compétitifs."
+    },
+    {
+      "id": "tcg",
+      "title": "TCG Creator",
+      "category": "Perso",
+      "banner": "https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?q=80&w=1025&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "React / Node.js",
+        "status": "En cours",
+        "creationDate": "2026"
+      },
+      "github": "https://github.com/Nathan-Camredon",
+      "markdownContent": "# TCG Creator\n\nCréateur et simulateur de jeu de cartes à collectionner (Trading Card Game) avec frontend React et backend Node."
+    },
+    {
+      "id": "tictactoe",
+      "title": "Tic Tac Toe (Morpion)",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1611890798517-0127e2724787?q=80&w=1170&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1611890798517-0127e2724787?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "Python (Pygame / Tkinter)",
+        "status": "Terminé",
+        "creationDate": "2026"
+      },
+      "github": "https://github.com/Nathan-Camredon/School_project",
+      "markdownContent": "# Tic Tac Toe (Morpion)\n\nJeu du morpion développé en Python avec interface graphique (Tkinter / Pygame) pour un projet scolaire.",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://images.unsplash.com/photo-1611890798517-0127e2724787?q=80&w=1170",
+          "thumbnail": "https://images.unsplash.com/photo-1611890798517-0127e2724787?q=80&w=200"
+        }
+      ]
+    },
+    {
+      "id": "wahiba",
+      "title": "Wahiba Project",
+      "category": "Perso",
+      "banner": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "React / Next.js",
+        "status": "En cours",
+        "creationDate": "2026"
+      },
+      "github": "https://github.com/Nathan-Camredon",
+      "markdownContent": "# Wahiba Project\n\nApplication web moderne développée avec React et Next.js.",
+      "media": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+        },
+        {
+          "type": "image",
+          "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115",
+          "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=200"
+        },
+        {
+          "type": "image",
+          "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1170",
+          "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=200"
+        }
+      ]
     }
   ]
 }
