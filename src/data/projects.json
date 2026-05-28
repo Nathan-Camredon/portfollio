@@ -1,0 +1,38 @@
+{
+  "categories": [
+    "Scolaire",
+    "Perso"
+  ],
+  "projects": [
+    {
+      "id": "une-vie-de-fourmi",
+      "title": "Une Vie De Fourmi",
+      "category": "Scolaire",
+      "banner": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1284&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "C++",
+        "status": "Terminé",
+        "creationDate": "Avril 2024"
+      },
+      "github": "https://github.com",
+      "rawMarkdownUrl": null,
+      "markdownContent": "# Une Vie De Fourmi\n\nBienvenue dans le projet **Une Vie De Fourmi** !\nC'est un projet scolaire développé en `C++` visant à simuler le comportement d'une colonie de fourmis.\n\n## Fonctionnalités\n- Algorithmes de recherche de nourriture (Pheromones).\n- Gestion de la colonie (reine, ouvrières, soldats).\n- Interface graphique minimaliste.\n\n### Exemple de code\n```cpp\nvoid Ant::updatePosition() {\n    this->x += this->vx;\n    this->y += this->vy;\n}\n```\n\n> Un projet fascinant sur l'intelligence en essaim."
+    },
+    {
+      "id": "portfolio-v1",
+      "title": "Steam Portfolio",
+      "category": "Perso",
+      "banner": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1170&auto=format&fit=crop",
+      "icon": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=100&auto=format&fit=crop",
+      "meta": {
+        "languages": "React, Vite, CSS",
+        "status": "Terminé",
+        "creationDate": "Mai 2026"
+      },
+      "github": "https://github.com",
+      "rawMarkdownUrl": null,
+      "markdownContent": "# Steam Portfolio\n\nMon portfolio personnel, conçu pour ressembler à la bibliothèque Steam.\n\n## Pourquoi ce design ?\nSteam a une interface sombre, élégante et très orientée \"collection\". C'est parfait pour présenter des projets informatiques comme on présenterait une collection de jeux vidéo !\n\n## Stack Technique\n* Vite\n* React\n* Vanilla CSS"
+    }
+  ]
+}
