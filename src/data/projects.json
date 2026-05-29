@@ -262,11 +262,11 @@
       "icon": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=100&auto=format&fit=crop",
       "meta": {
         "languages": "React / Next.js",
-        "status": "En cours",
+        "status": "Terminé",
         "creationDate": "2026"
       },
-      "github": "https://github.com/Nathan-Camredon",
-      "markdownContent": "# Wahiba Project\n\nApplication web moderne développée avec React et Next.js.",
+      "github": "https://wahiba.fr/",
+      "markdownContent": "### Projet Wahiba : Application de Restauration Scolaire\n\n**Le Contexte**\nCette application web a été conçue pour répondre à un problème récurrent : le manque d'informations concernant les menus de la cantine et ses jours d'ouverture.\n\n**La Solution & Fonctionnalités**\n* **Espace Consommateur :** Une interface claire permettant aux utilisateurs de consulter facilement les menus et les plannings.\n* **Espace Administration :** * Tableau de bord pour récolter et analyser les avis des consommateurs.\n  * Système de gestion des stocks automatisé via le scan de codes-barres, interfacé avec l'API **OpenFoodFacts**.\n\n**L'Équipe & Mon Rôle**\nProjet collaboratif réalisé en équipe de 3 personnes. J'ai eu la responsabilité spécifique de :\n* Concevoir et développer le module complet de gestion de stock.\n* Gérer l'infrastructure technique : implémentation, configuration et déploiement sur un serveur VPS (sous Docker).\n* Assurer la maintenance technique continue du service.",
       "media": [
         {
           "type": "youtube",
