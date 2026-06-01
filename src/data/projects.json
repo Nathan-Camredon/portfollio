@@ -16,7 +16,7 @@
         "creationDate": "Avril 2024"
       },
       "github": "https://github.com",
-      "markdownContent": "# Une Vie De Fourmi\n\nSimulation de colonie de fourmis en C++.\n\n## Fonctionnalités\n- Algorithmes de recherche de nourriture basés sur les phéromones.\n- Gestion des castes (reine, ouvrières, soldats).\n- Interface graphique minimaliste.",
+      "markdownContent": "# Une Vie De Fourmi\n\nSimulation comportementale de colonie de fourmis développée en C++.\n\n## 🐜 Concept & Fonctionnalités\n\nCe projet modélise l'intelligence collective et le comportement d'une colonie de fourmis recherchant activement de la nourriture.\n\n* **Algorithme de Phéromones** : Les fourmis déposent des traces chimiques d'évaporation dynamique pour guider efficacement la colonie vers les sources de nourriture découvertes.\n* **Gestion des Castes** : Division du travail stricte modélisée entre la reine, les ouvrières (récolte) et les soldats (défense de zone).\n* **Interface Graphique** : Rendu visuel en temps réel de la carte, des obstacles et des fourmis en mouvement avec gestion des collisions.\n\n## 🛠️ Stack Technique\n\n* **Langage** : C++ 17\n* **Graphismes** : Bibliothèque SFML (pour le rendu graphique 2D et la gestion d'événements)",
       "media": [
         {
           "type": "image",
@@ -28,7 +28,7 @@
     {
       "id": "portfolio-v1",
       "title": "Steam Portfolio",
-      "category": "Perso",
+      "category": "Scolaire",
       "banner": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1170&auto=format&fit=crop",
       "icon": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=100&auto=format&fit=crop",
       "meta": {
@@ -37,7 +37,7 @@
         "creationDate": "Mai 2026"
       },
       "github": "https://github.com/Nathan-Camredon/portfollio",
-      "markdownContent": "# Steam Portfolio\n\nMon portfolio personnel conçu pour ressembler à la bibliothèque Steam."
+      "markdownContent": "# Steam Portfolio\n\nUn portfolio moderne et interactif reprenant le design et l'ergonomie de la bibliothèque de jeux Steam.\n\n## 🎮 Fonctionnalités Clés\n\n* **Bibliothèque Interactive** : Liste latérale de tous tes projets triés par catégorie (Scolaire, Perso) avec recherche fluide par mot-clé.\n* **Accueil de Bibliothèque** : Tableau de bord affichant les statistiques globales de développement (nombre de projets, états), les nouveautés sous forme de cartes d'actualités et le catalogue complet.\n* **Lecteur Multimédia Steam** : Visionneuse intégrée supportant des démonstrations vidéos YouTube, des vidéos locales HTML5 et des galeries de captures d'écran.\n* **Responsive Mobile Drawer** : Barre de navigation escamotable s'activant sous forme de menu tiroir fluide avec flou d'arrière-plan sur les écrans tactiles.\n\n## 🛠️ Stack Technique\n\n* **Framework** : React 19 / Vite\n* **Rendu Markdown** : React Markdown (rendu dynamique et sécurisé des fiches projets)\n* **Stylisation** : Vanilla CSS avec gestion de variables HSL adaptées au thème sombre de Steam"
     },
     {
       "id": "budget-buddy",
@@ -51,7 +51,7 @@
         "creationDate": "Mars 2026"
       },
       "github": "https://github.com/Nathan-Camredon/budget_buddy",
-      "markdownContent": "# Budget Buddy\n\nApplication personnelle de gestion de budget et de suivi des dépenses."
+      "markdownContent": "# Budget Buddy\n\nApplication personnelle de gestion financière et de suivi budgétaire rigoureux.\n\n## 💸 Fonctionnalités\n\n* **Suivi des Dépenses & Revenus** : Ajout rapide des transactions avec montant, date et tags de classification personnalisés.\n* **Visualisation de Données** : Graphiques interactifs illustrant la répartition des dépenses mensuelles et l'évolution de l'épargne.\n* **Seuils d'Alerte** : Définition de plafonds budgétaires par catégorie de dépenses (ex: alimentation, loisirs) avec notifications de dépassement.\n\n## 🛠️ Stack Technique\n\n* **Langages** : Python & JavaScript\n* **Base de Données** : SQLite (persistance locale et intégrité des transactions financières)\n* **Interface** : Tkinter pour l'application graphique de bureau"
     },
     {
       "id": "fruit-slicer",
@@ -65,7 +65,7 @@
         "creationDate": "Janvier 2026"
       },
       "github": "https://github.com/Nathan-Camredon/fruit-slicer",
-      "markdownContent": "# Fruit Slicer\n\nJeu d'arcade inspiré du célèbre Fruit Ninja codé en Python."
+      "markdownContent": "# Fruit Slicer\n\nJeu d'arcade inspiré du célèbre jeu mobile Fruit Ninja, entièrement codé en Python.\n\n## 🍓 Gameplay & Mécaniques\n\n* **Physique de Découpe** : Algorithme de détection de trajectoire et de collision linéaire entre le curseur de la souris (le sabre) et les fruits projetés.\n* **Effets de Particules** : Éclaboussures de jus de fruits colorées calculées dynamiquement selon l'angle de coupe.\n* **Système de Score** : Multiplicateurs de combo pour les tranches simultanées, gestion des bombes de pénalité et compteur de vies.\n\n## 🛠️ Stack Technique\n\n* **Langage** : Python 3\n* **Moteur Graphique** : Pygame (gestion complète de la boucle de jeu, du rendu 2D et de l'audio)"
     },
     {
       "id": "hangman",
@@ -79,7 +79,7 @@
         "creationDate": "Janvier 2026"
       },
       "github": "https://github.com/Nathan-Camredon/Hangman",
-      "markdownContent": "# Hangman (Pendu)\n\nJeu classique du pendu réalisé en Python dans le cadre de projets d'apprentissage."
+      "markdownContent": "# Hangman (Pendu)\n\nJeu classique de devinette de mots réalisé en Python dans le cadre d'un projet d'apprentissage algorithmique.\n\n## ✏️ Caractéristiques principales\n\n* **Génération de Mots** : Algorithme de sélection aléatoire de mots à partir d'un fichier dictionnaire local structuré.\n* **Double Mode d'Interface** : Support d'un mode Console interactif et d'un mode Graphique dynamique dessinant la potence étape par étape.\n* **Statistiques de Session** : Suivi des scores du joueur, taux de réussite global et historique des lettres essayées.\n\n## 🛠️ Stack Technique\n\n* **Langage** : Python 3\n* **Interface Graphique** : Tkinter (pour l'affichage des fenêtres, boutons et canvas de dessin)"
     },
     {
       "id": "laplateforme-tracker",
@@ -93,7 +93,7 @@
         "creationDate": "Avril 2026"
       },
       "github": "https://github.com/Nathan-Camredon/LaplateformeTracker",
-      "markdownContent": "# LaPlateforme Tracker\n\nApplication de suivi et de gestion d'activités pour la formation à LaPlateforme, développée en Java."
+      "markdownContent": "# LaPlateforme Tracker\n\nApplication Java d'enregistrement et de suivi des présences et d'assiduité des étudiants.\n\n## 📋 Fonctionnalités majeures\n\n* **Pointage et Enregistrement** : Système d'émargement numérique des étudiants enregistrant l'heure exacte d'arrivée et de départ.\n* **Portail Administrateur** : Tableau de bord complet permettant de filtrer les présences par classe, par date et d'identifier les retards systématiques.\n* **Reporting & Exports** : Fonction de génération de rapports d'assiduité hebdomadaires ou mensuels exportables au format CSV.\n\n## 🛠️ Stack Technique\n\n* **Langage** : Java SE\n* **Base de Données** : MySQL (via JDBC) pour le stockage persistant et sécurisé des profils étudiants\n* **Interface Utilisateur** : JavaFX (conception de l'UI moderne et réactive)"
     },
     {
       "id": "pokemon",
@@ -107,7 +107,7 @@
         "creationDate": "Février 2026"
       },
       "github": "https://github.com/Nathan-Camredon/Pokemon",
-      "markdownContent": "# Pokémon\n\nJeu de combat et d'exploration Pokémon développé en Python (Pygame).",
+      "markdownContent": "# Pokémon Game\n\nJeu d'exploration et de combat au tour par tour reprenant l'univers de Pokémon.\n\n## ⚡ Mécaniques du Jeu\n\n* **Moteur de Combat** : Système de duel au tour par tour gérant les attaques physiques/spéciales, l'efficacité des types élémentaires (eau, feu, plante, etc.) et le calcul des coups critiques.\n* **Monde Ouvert 2D** : Carte d'exploration structurée avec mouvements de grille de tuiles (tilemap) et rencontres aléatoires d'ennemis dans les hautes herbes.\n* **Système d'Équipe & Sac** : Gestion de l'inventaire (potions, Pokeballs de capture) et gain d'expérience menant à l'évolution des Pokémons.\n\n## 🛠️ Stack Technique\n\n* **Langage** : Python 3\n* **Rendu 2D** : Pygame (moteur d'affichage de cartes 2D, boucles d'animation et de combat)",
       "media": [
         {
           "type": "image",
@@ -133,7 +133,7 @@
         "creationDate": "Janvier 2026"
       },
       "github": "https://github.com/Nathan-Camredon/School_project",
-      "markdownContent": "# Calculatrice\n\nProjet de calculatrice fonctionnelle développé dans le cadre scolaire."
+      "markdownContent": "# Calculatrice\n\nUne application de calculatrice multifonctionnelle développée dans un but académique.\n\n## 🧮 Fonctionnalités\n\n* **Opérations Arithmétiques Standards** : Addition, soustraction, multiplication, division, calculs de pourcentages.\n* **Fonctions Avancées (Scientifiques)** : Parenthèses imbriquées, calculs de puissances, racines carrées et gestion de mémoire.\n* **Contrôles du Clavier** : Support complet des entrées clavier physiques pour une saisie rapide et fluide en complément des boutons de l'écran.\n\n## 🛠️ Stack Technique\n\n* **Langages** : HTML5 / CSS3 / JavaScript (ou Python selon la version déployée)\n* **Design** : Interface utilisateur responsive et minimaliste imitant les calculatrices physiques modernes"
     },
     {
       "id": "clock",
@@ -147,7 +147,7 @@
         "creationDate": "Janvier 2026"
       },
       "github": "https://github.com/Nathan-Camredon/School_project",
-      "markdownContent": "# Clock\n\nApplication d'horloge numérique/analogique interactive."
+      "markdownContent": "# Clock (Horloge)\n\nApplication web interactive d'affichage du temps et de chronométrage.\n\n## ⏰ Fonctionnalités principales\n\n* **Double Affichage de l'Heure** : Horloge numérique précise et cadran analogique traditionnel rendu de façon dynamique en temps réel.\n* **Chronomètre & Minuteur** : Outils de mesure temporelle avec gestion de tours (laps) et alerte sonore de fin de compte à rebours.\n* **Personnalisation Visuelle** : Plusieurs styles de cadrans (sombre, néon futuriste, minimaliste) sélectionnables à la volée.\n\n## 🛠️ Stack Technique\n\n* **Structure & Style** : HTML5 / CSS3\n* **Moteur Logique** : Vanilla JavaScript (utilisation de `requestAnimationFrame` et de l'API Canvas pour un rendu des aiguilles à 60 FPS)"
     },
     {
       "id": "villanova",
@@ -161,7 +161,7 @@
         "creationDate": "Mai 2026"
       },
       "github": "https://github.com/Nathan-Camredon/VillaNova",
-      "markdownContent": "# VillaNova\n\nProjet d'intégration web moderne avec SCSS validant ma certification."
+      "markdownContent": "# VillaNova\n\nProjet professionnel d'intégration web et de conception responsive validant ma certification de fin d'études.\n\n## 🏠 Caractéristiques de l'Intégration\n\n* **SCSS Modulaire (Sass)** : Architecture CSS rigoureuse respectant la méthodologie BEM, découpée en fichiers thématiques (variables, mixins, mise en page, composants).\n* **Responsive Design Absolu** : Interface s'adaptant dynamiquement à tous les formats d'écrans (smartphones, tablettes, moniteurs 4K) grâce à l'utilisation ciblée de CSS Grid et Flexbox.\n* **Micro-interactions** : Animations fluides au survol des composants, transitions d'apparition et optimisation des temps de chargement d'images.\n\n## 🛠️ Stack Technique\n\n* **Langages** : HTML5 / CSS3 (Sass compiler / SCSS)"
     },
     {
       "id": "zeri-bot",
@@ -175,7 +175,7 @@
         "creationDate": "Décembre 2025"
       },
       "github": "https://github.com/Nathan-Camredon/zeri_bot",
-      "markdownContent": "# Zeri Bot\n\nBot Discord thématique (League of Legends) codé en Python."
+      "markdownContent": "# Zeri Bot\n\nUn bot Discord complet dédié à la gestion d'équipes et à l'organisation de sessions de jeux compétitifs.\n\n## 🤖 Fonctionnalités\n\n* **Multi-Serveur** : Isolation logique des configurations, des équipes de joueurs et des plannings par serveur Discord (Guild).\n* **Suivi de Disponibilités** : Commande interactive permettant aux joueurs d'inscrire leurs créneaux horaires libres sur la semaine.\n* **Planification Automatique** : Algorithme calculant les créneaux communs maximaux pour réunir une équipe complète sans conflits d'horaires.\n* **Organisation de Sessions** : Planification de entraînements officiels avec système de rappel automatique par notifications.\n\n## 🛠️ Stack Technique\n\n* **Langage** : Python 3\n* **API Discord** : Discord.py (Slash commands support)\n* **Base de Données** : SQLite (persistance légère des plannings et configurations serveurs)"
     },
     {
       "id": "bank",
@@ -189,7 +189,7 @@
         "creationDate": "2026"
       },
       "github": "https://github.com/Nathan-Camredon",
-      "markdownContent": "# Bank Application\n\nSystème bancaire simulé en Python avec authentification, transactions et tableau de bord."
+      "markdownContent": "# Bank Application\n\nSimulation logicielle de guichet automatique et de gestion bancaire programmée en Orienté Objet.\n\n## 🔒 Sécurité & Fonctionnalités\n\n* **Authentification Sécurisée** : Système de connexion client avec hachage et salage des mots de passe pour sécuriser l'accès.\n* **Moteur de Transactions** : Gestion rigoureuse des virements entre comptes, des dépôts et des retraits avec contrôle automatique de découvert autorisé.\n* **Journal d'Activités** : Historique complet des transactions généré à la volée pour chaque compte bancaire client.\n\n## 🛠️ Stack Technique\n\n* **Langage** : Python (modélisation de classes structurées : Clients, Comptes, Transactions)\n* **Base de Données** : SQLite (persistance sécurisée des comptes bancaires)"
     },
     {
       "id": "demineur",
@@ -203,35 +203,21 @@
         "creationDate": "2026"
       },
       "github": "https://github.com/Nathan-Camredon",
-      "markdownContent": "# Démineur\n\nRecréation fidèle du célèbre jeu de réflexion Windows Démineur en Python."
-    },
-    {
-      "id": "draftgap",
-      "title": "DraftGap Helper",
-      "category": "Scolaire",
-      "banner": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=1265&auto=format&fit=crop",
-      "icon": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=100&auto=format&fit=crop",
-      "meta": {
-        "languages": "Python / JS",
-        "status": "Terminé",
-        "creationDate": "2026"
-      },
-      "github": "https://github.com/Nathan-Camredon",
-      "markdownContent": "# DraftGap Helper\n\nApplication web d'aide à la phase de draft (choix des champions) pour les jeux compétitifs."
+      "markdownContent": "# Démineur\n\nRecréation fidèle et optimisée du célèbre jeu de réflexion Windows Démineur en Python.\n\n## 💣 Fonctionnalités\n\n* **Génération de Grille Anti-Échec** : Algorithme plaçant les mines de façon aléatoire lors du premier clic de l'utilisateur, garantissant que le premier coup n'est jamais perdant.\n* **Drapeaux & Analyse** : Outil de marquage des cases suspectes et calcul dynamique du nombre de mines adjacentes.\n* **Chronomètre & Difficulté** : Mesure du temps écoulé avec possibilité de configurer la taille de la grille et le ratio de mines.\n\n## 🛠️ Stack Technique\n\n* **Langage** : Python 3\n* **Graphismes** : Pygame (boucle événementielle réactive et affichage fluide de la grille)"
     },
     {
       "id": "tcg",
-      "title": "TCG Creator",
+      "title": "Ages Of Ares",
       "category": "Perso",
       "banner": "https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?q=80&w=1025&auto=format&fit=crop",
       "icon": "https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?q=80&w=100&auto=format&fit=crop",
       "meta": {
-        "languages": "React / Node.js",
+        "languages": "Typescript / Angular",
         "status": "En cours",
         "creationDate": "2026"
       },
-      "github": "https://github.com/Nathan-Camredon",
-      "markdownContent": "# TCG Creator\n\nCréateur et simulateur de jeu de cartes à collectionner (Trading Card Game) avec frontend React et backend Node."
+      "github": "https://github.com/Nathan-Camredon/TCG",
+      "markdownContent": "# TCG Creator\n\nMoteur et simulateur de jeu de cartes à collectionner tactique (Trading Card Game) avec donjon de combat.\n\n## 📖 Philosophie de Design\n\n* **Skill > Rarity** : Une carte Commune bien jouée peut battre une Mythique.\n* **Rareté = Complexité** : La rareté représente la difficulté technique et la profondeur des synergies, pas la puissance brute.\n* **Gestion d'Attrition** : Le jeu ne repose pas sur le temps (cooldown) mais sur la gestion de munitions (charges de sorts limitées).\n* **Accessibilité** : Facile à apprendre, difficile à maîtriser.\n* **No Pay-to-Win** : Toutes les cartes sont équilibrées. La beta est entièrement gratuite.\n\n## 🛠️ 3. Architecture Technique (Backend Node.js)\n\nLe moteur de jeu a été pensé de manière \"Agnostique\" via un design pattern proche du **MVC** :\n\n1. **Les Modèles (Data) :**\n   - `Card.ts` (Abstraite) : Définit les statistiques brutes, les méthodes d'effets et la logique de dégâts. Héro (ex: `ClassicTank`, `evolman`) et Monstres (`MonsterCard`) en héritent.\n   - `BattleEntity.ts` : Représente la carte sur le terrain (avec un propriétaire `ownerId`).\n2. **Le Moteur (Business Logic) :**\n   - `MatchEngine.ts` : L'arbitre absolu. Il gère la boucle des Rounds, jette les dés de Vitesse pour l'ordre des tours, et recalcule les états de fin de tour.\n3. **Les Contrôleurs (Inputs) :**\n   - `CombatController` (Interface) : Permet de brancher n'importe quel cerveau au combat.\n   - `AiController` : L'Intelligence Artificielle actuelle qui trie les entités pour attaquer la cible la plus vulnérable ou soigner l'allié le plus faible.\n   - *(En cours)* `HumanController` : Permettra d'attendre via des requêtes Asynchrones (Socket.io) les clics visuels d'un joueur humain réel.\n\n## 🛠️ Stack Technique\n\n* **Langages** : TypeScript / Angular\n* **Modèles** : Architecture orientée objet modulaire agnostique de l'interface"
     },
     {
       "id": "tictactoe",
@@ -245,7 +231,7 @@
         "creationDate": "2026"
       },
       "github": "https://github.com/Nathan-Camredon/School_project",
-      "markdownContent": "# Tic Tac Toe (Morpion)\n\nJeu du morpion développé en Python avec interface graphique (Tkinter / Pygame) pour un projet scolaire.",
+      "markdownContent": "# Tic Tac Toe (Morpion)\n\nJeu du morpion enrichi doté d'une Intelligence Artificielle imbattable, développé en Python.\n\n## ❌ Caractéristiques de l'IA & Interface\n\n* **Algorithme Minimax** : Intelligence Artificielle analysant de manière récursive l'arbre de jeu pour choisir le coup optimal, rendant l'IA mathématiquement imbattable.\n* **Double Rendu Visuel** : Une version légère codée sous Tkinter et une version interactive moderne enrichie d'effets néons codée sous Pygame.\n* **Historique de Session** : Compteur de victoires, défaites et matchs nuls persistant pendant la partie.\n\n## 🛠️ Stack Technique\n\n* **Langage** : Python 3\n* **Graphismes** : Tkinter (version bureau standard) & Pygame (version animée)",
       "media": [
         {
           "type": "image",
@@ -256,17 +242,18 @@
     },
     {
       "id": "wahiba",
-      "title": "Wahiba Project",
+      "title": "Wahiba - Cantine",
       "category": "Perso",
       "banner": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop",
       "icon": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=100&auto=format&fit=crop",
       "meta": {
         "languages": "React / Next.js",
-        "status": "Terminé",
+        "status": "En cours",
         "creationDate": "2026"
       },
-      "github": "https://wahiba.fr/",
-      "markdownContent": "### Projet Wahiba : Application de Restauration Scolaire\n\n**Le Contexte**\nCette application web a été conçue pour répondre à un problème récurrent : le manque d'informations concernant les menus de la cantine et ses jours d'ouverture.\n\n**La Solution & Fonctionnalités**\n* **Espace Consommateur :** Une interface claire permettant aux utilisateurs de consulter facilement les menus et les plannings.\n* **Espace Administration :** * Tableau de bord pour récolter et analyser les avis des consommateurs.\n  * Système de gestion des stocks automatisé via le scan de codes-barres, interfacé avec l'API **OpenFoodFacts**.\n\n**L'Équipe & Mon Rôle**\nProjet collaboratif réalisé en équipe de 3 personnes. J'ai eu la responsabilité spécifique de :\n* Concevoir et développer le module complet de gestion de stock.\n* Gérer l'infrastructure technique : implémentation, configuration et déploiement sur un serveur VPS (sous Docker).\n* Assurer la maintenance technique continue du service.",
+      "github": "https://github.com/Hykoo13/Wahiba",
+      "website": "https://wahiba.fr",
+      "markdownContent": "# Wahiba Project\n\nProgressive Web App (PWA) de numérisation, d'inventaire et de suivi temps réel pour événements.\n\n## 📱 Fonctionnalités Clés\n\n* **Scan QR Code Interactif** : Intégration de la caméra utilisateur via HTML5 pour scanner et pointer instantanément des billets ou du matériel.\n* **Synchronisation Temps Réel** : Communication bilatérale instantanée avec le service de base de données Supabase, mettant à jour l'affichage sans recharger.\n* **Mode Hors-Ligne (PWA)** : Service Worker optimisé avec Serwist permettant à l'application d'être installée sur smartphone et de fonctionner sans réseau.\n* **Interface Premium** : Composants utilisateur haut de gamme, accessibles et fluides basés sur Radix UI et Tailwind CSS.\n\n## 🛠️ Stack Technique\n\n* **Framework** : Next.js 16 (React 19, TypeScript)\n* **Backend & Authentification** : Supabase (Database, Auth SSR)\n* **PWA Engine** : Serwist Service Worker\n* **UI Library** : Radix UI & Tailwind CSS v4",
       "media": [
         {
           "type": "youtube",
