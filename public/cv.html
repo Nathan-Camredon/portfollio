@@ -22,6 +22,7 @@
 
             /* Supprime les marges par défaut du navigateur */
             @page {
+                size: A4;
                 margin: 0;
             }
 
@@ -39,18 +40,27 @@
 
             /* Force le conteneur à prendre toute la largeur et hauteur sans marges */
             #cv-container {
-                width: 100%;
+                width: 210mm;
+                height: 297mm;
                 max-width: 100%;
                 margin: 0;
                 padding: 0;
                 box-shadow: none;
                 border-radius: 0;
-                min-height: 100vh;
+                display: flex !important;
+                flex-direction: row !important;
             }
 
             /* Ajustements pour la colonne de gauche en impression */
             .left-col {
-                min-height: 100vh;
+                width: 33.333333% !important;
+                height: 297mm !important;
+            }
+
+            .right-col {
+                width: 66.666667% !important;
+                height: 297mm !important;
+                padding: 1.5rem !important;
             }
 
             .page-break {
@@ -155,7 +165,7 @@
         </div>
 
         <!-- Colonne de droite (Contenu Principal) -->
-        <div class="w-full md:w-2/3 p-8 text-slate-800 flex flex-col justify-between">
+        <div class="right-col w-full md:w-2/3 p-8 text-slate-800 flex flex-col justify-between">
 
             <div>
                 <div class="mb-8">
