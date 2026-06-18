@@ -118,6 +118,11 @@
           "type": "image",
           "url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1170",
           "thumbnail": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=200"
+        },
+        {
+          "type": "image",
+          "url": "/uml-pokemon.svg",
+          "thumbnail": "/uml-pokemon.svg"
         }
       ]
     },
