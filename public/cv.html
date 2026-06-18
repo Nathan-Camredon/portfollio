@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Nathan Camredon - Développeur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .print-btn {
+            display: block;
+        }
+
+        @media print {
+
+            /* Supprime les marges par défaut du navigateur */
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                background-color: white;
+            }
+
+            /* Cache le bouton d'impression */
+            .print-btn {
+                display: none;
+            }
+
+            /* Force le conteneur à prendre toute la largeur et hauteur sans marges */
+            #cv-container {
+                width: 210mm;
+                height: 297mm;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                border-radius: 0;
+                display: flex !important;
+                flex-direction: row !important;
+            }
+
+            /* Ajustements pour la colonne de gauche en impression */
+            .left-col {
+                width: 33.333333% !important;
+                height: 297mm !important;
+            }
+
+            .right-col {
+                width: 66.666667% !important;
+                height: 297mm !important;
+                padding: 1.5rem !important;
+            }
+
+            .page-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 p-4 md:p-8 print:p-0 print:bg-white">
+
+    <!-- Bouton d'impression -->
+    <div class="max-w-4xl mx-auto mb-4 text-right print-btn">
+        <button onclick="window.print()"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow">
+            <i class="fas fa-file-pdf mr-2"></i> Enregistrer en PDF
+        </button>
+    </div>
+
+    <!-- Conteneur Principal CV (ID ajouté pour le CSS print) -->
+    <div id="cv-container"
+        class="max-w-4xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden flex flex-col md:flex-row min-h-[1000px]">        <!-- Colonne de gauche (Infos & Skills) -->
+        <div class="left-col w-full md:w-1/3 bg-slate-800 text-white p-6 flex flex-col">
+
+            <!-- Emplacement de la photo -->
+            <!-- L'image est ronde avec une bordure et une ombre pour s'intégrer au design -->
+            <div class="h-40 mb-5 flex flex-col justify-center items-center">
+                <img src="image_cv.jpg" alt="Nathan Camredon"
+                    class="w-32 h-32 mx-auto rounded-full object-cover object-[center_20%] border-4 border-slate-600 shadow-xl">
+            </div>
+
+            <h2 class="text-xl font-bold uppercase tracking-widest border-b border-slate-600 pb-2 mb-3.5">Contact</h2>
+            <ul class="text-sm space-y-2.5 mb-7 text-slate-300">
+                <li class="flex items-center"><i class="fas fa-map-marker-alt w-6 text-blue-400"></i> Aix-en-Provence
+                    (13090)</li>
+                <li class="flex items-center"><i class="fas fa-car w-6 text-blue-400"></i> Permis B + Véhicule</li>
+                <li class="flex items-center"><i class="fas fa-phone w-6 text-blue-400"></i> 06 31 99 34 75</li>
+                <li class="flex items-center"><i class="fas fa-envelope w-6 text-blue-400"></i> nathancamredon@gmail.com
+                </li>
+                <li class="flex items-center">
+                    <a href="https://github.com/Nathan-Camredon" target="_blank"
+                        class="flex items-center hover:text-white transition">
+                        <i class="fab fa-github w-6 text-blue-400"></i> /Nathan-Camredon
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <a href="https://portfolio-nc.me" target="_blank"
+                        class="flex items-center hover:text-white transition">
+                        <i class="fas fa-globe w-6 text-blue-400"></i> portfolio-nc.me
+                    </a>
+                </li>
+            </ul>
+
+            <h2 class="text-xl font-bold uppercase tracking-widest border-b border-slate-600 pb-2 mb-3.5">Stack Tech</h2>
+
+            <div class="mb-5">
+                <h3 class="font-semibold text-blue-400 mb-2 text-sm">Langages, Frameworks & BDD</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span
+                        class="bg-slate-700 px-2 py-1 rounded text-sm font-semibold text-white border-l-2 border-blue-500">TypeScript</span>
+                    <span
+                        class="bg-slate-700 px-2 py-1 rounded text-sm font-semibold text-white border-l-2 border-blue-500">Node.js</span>
+                    <span
+                        class="bg-slate-700 px-2 py-1 rounded text-sm font-semibold text-white border-l-2 border-blue-500">Angular</span>
+                    <span
+                        class="bg-slate-700 px-2 py-1 rounded text-sm font-semibold text-white border-l-2 border-blue-500">PostgreSQL</span>
+                    <span
+                        class="bg-slate-700 px-2 py-1 rounded text-sm font-semibold text-white border-l-2 border-blue-500">Prisma</span>
+                    <span
+                        class="bg-slate-700 px-2 py-1 rounded text-sm font-semibold text-white border-l-2 border-blue-500">Python</span>
+                    <span
+                        class="bg-slate-700 px-2 py-1 rounded text-sm font-semibold text-white border-l-2 border-blue-500">Java</span>
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="font-semibold text-blue-400 mb-1.5 text-sm">Outils & Env.</h3>
+                <ul class="text-sm text-slate-300 space-y-1">
+                    <li>• Git / GitHub</li>
+                    <li>• VS Code</li>
+                    <li>• Linux & VPS</li>
+                </ul>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="font-semibold text-blue-400 mb-1.5 text-sm">Savoir-être</h3>
+                <ul class="text-sm text-slate-300 space-y-1">
+                    <li>• Travail d'équipe</li>
+                    <li>• Rigueur & Ponctualité</li>
+                    <li>• Autonomie (Projets persos)</li>
+                </ul>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="font-semibold text-blue-400 mb-1.5 text-sm">Langues</h3>
+                <ul class="text-sm text-slate-300 space-y-1">
+                    <li>• Français (Courant)</li>
+                    <li>• Anglais (C1)</li>
+                    <li>• Russe (B1)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Colonne de droite (Contenu Principal) -->
+        <div class="right-col w-full md:w-2/3 p-8 text-slate-800 flex flex-col justify-between">
+
+            <div>
+                <div class="mb-8">
+                    <h1 class="text-3xl font-bold text-slate-900 mb-1">NATHAN CAMREDON</h1>
+                    <h2 class="text-xl text-blue-600 font-medium">Étudiant Développeur Logiciel</h2>
+                    <div class="mt-3.5 bg-blue-50 border-l-4 border-blue-600 p-3 text-sm">
+                        <p class="text-slate-700 font-semibold">
+                            <i class="fas fa-calendar-check mr-2"></i> Recherche d'alternance à partir d'Août
+                        </p>
+                        <p class="text-slate-600 mt-1">
+                            Étudiant à La Plateforme_, passionné par le back-end et l'automatisation. Mobile en France.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section Projets -->
+                <div class="mb-8 page-break">
+                    <h3 class="text-lg font-bold uppercase text-slate-800 border-b-2 border-blue-200 pb-1.5 mb-3.5">
+                        <i class="fas fa-code text-blue-600 mr-2"></i> Projets GitHub
+                    </h3>
+
+                    <!-- Projet Principal TCG -->
+                    <div class="bg-blue-50 p-3.5 rounded-lg border border-blue-200 shadow-sm mb-4">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2 gap-2">
+                            <h4 class="font-bold text-base text-slate-900">Jeu de Cartes à Jouer (TCG)</h4>
+                            <span class="text-xs font-bold bg-blue-600 text-white px-2 py-0.5 rounded w-fit">TypeScript, Angular, Prisma, PostgreSQL</span>
+                        </div>
+                        <p class="text-xs text-slate-700 mb-2 font-medium">
+                            Développement d'un jeu TCG en ligne.
+                        </p>
+                        <ul class="list-disc list-inside text-xs text-slate-600 space-y-1 ml-1">
+                            <li><strong>Frontend :</strong> Architecture dynamique avec des composants Angular.</li>
+                            <li><strong>Logique & Backend :</strong> Implémentation d'un moteur de combat et règles en TypeScript.</li>
+                            <li><strong>Persistance :</strong> Modélisation de la BDD avec Prisma et PostgreSQL.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Projet wahiba.fr -->
+                    <div class="bg-gray-50 p-3.5 rounded-lg border border-gray-200">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2 gap-2">
+                            <h4 class="font-semibold text-base text-slate-800">wahiba.fr - Application de Restauration</h4>
+                            <span class="text-xs font-bold bg-gray-200 text-gray-700 px-2 py-0.5 rounded w-fit">Node.js, Express, OpenFoodFacts, VPS</span>
+                        </div>
+                        <p class="text-xs text-slate-600 text-justify mb-2">
+                            Plateforme web permettant de consulter le menu et les horaires d'ouverture d'un restaurant.
+                        </p>
+                        <ul class="list-disc list-inside text-xs text-slate-600 space-y-1 ml-1">
+                            <li><strong>Administration & Stocks :</strong> Scanner de codes-barres et API OpenFoodFacts.</li>
+                            <li><strong>Suivi d'activité :</strong> Dashboard de récupération des statistiques journalières.</li>
+                            <li><strong>Déploiement (DevOps) :</strong> Configuration et mise en production complète sur VPS.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Section Formation -->
+                <div class="mb-8 page-break">
+                    <h3 class="text-lg font-bold uppercase text-slate-800 border-b-2 border-blue-200 pb-1.5 mb-3.5">
+                        <i class="fas fa-graduation-cap text-blue-600 mr-2"></i> Formation
+                    </h3>
+                    <div class="mb-2">
+                        <div class="flex justify-between items-start">
+                            <h4 class="font-bold text-base text-gray-800">Bachelor Développeur Logiciel</h4>
+                            <span class="text-sm font-semibold text-blue-600 whitespace-nowrap">En cours</span>
+                        </div>
+                        <p class="text-sm font-bold text-slate-700">La Plateforme_ <span
+                                class="font-normal text-slate-500">- Marseille</span></p>
+                        <p class="text-xs text-gray-500 mt-1">Pédagogie par projets, coding, infrastructure système.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Expérience Job Étudiant (Preuve de soft skills) -->
+            <div class="page-break print:mb-0"> <!-- Retrait du margin-bottom en PDF pour éviter une page vide -->
+                <h3 class="text-lg font-bold uppercase text-slate-800 border-b-2 border-blue-200 pb-1.5 mb-3.5">
+                    <i class="fas fa-briefcase text-blue-600 mr-2"></i> Expériences Professionnelles
+                </h3>
+
+                <div class="mb-4">
+                    <div class="flex justify-between">
+                        <h4 class="font-bold text-base text-gray-800">Préparateur en boulangerie</h4>
+                        <span class="text-sm text-gray-500 text-right">Déc 2024 - Avril 2025</span>
+                    </div>
+                    <p class="text-sm text-blue-600 font-semibold">Ange Boulangerie</p>
+                    <p class="text-xs text-slate-500 mt-1">Respect des procédures, travail en autonomie, hygiène.</p>
+                </div>
+
+                <div>
+                    <div class="flex justify-between">
+                        <h4 class="font-bold text-base text-gray-800">Employé polyvalent</h4>
+                        <span class="text-sm text-gray-500 text-right">Avril - Novembre 2024</span>
+                    </div>
+                    <p class="text-sm text-blue-600 font-semibold">McDonald's</p>
+                    <p class="text-xs text-slate-500 mt-1">Travail sous pression, travail d'équipe, rapidité d'exécution.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

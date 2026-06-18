@@ -1,11 +1,11 @@
 # Étape 1 : Build de l'application
-FROM node:20-alpine AS build
+FROM node:22-alpine AS build
 WORKDIR /app
 
 # Copie des fichiers de dépendances
 COPY package.json package-lock.json ./
-# Installation propre des dépendances
-RUN npm ci
+# Installation des dépendances
+RUN npm install
 
 # Copie du reste du code source
 COPY . .

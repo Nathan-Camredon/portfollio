@@ -240,6 +240,20 @@ body {
   box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 }
 
+.play-button.private {
+  background: linear-gradient(to right, #414b53 5%, #2d353b 95%);
+  color: #7b8893;
+  cursor: not-allowed;
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.play-button.private:hover {
+  background: linear-gradient(to right, #414b53 5%, #2d353b 95%);
+  transform: none;
+  box-shadow: none;
+}
+
 .project-meta {
   color: var(--steam-text-main);
   font-size: 13px;
@@ -994,6 +1008,1300 @@ body {
     font-size: 14px;
   }
 }
+
+/* --- Steam App Layout --- */
+.steam-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* --- Steam Top Navigation Header --- */
+.steam-header {
+  background-color: var(--steam-bg-darker);
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+}
+
+.steam-header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+}
+
+.nav-arrows {
+  display: flex;
+  gap: 6px;
+}
+
+.nav-arrow-btn {
+  background: transparent;
+  border: none;
+  color: var(--steam-text-muted);
+  cursor: pointer;
+  font-size: 13px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.15s;
+}
+
+.nav-arrow-btn:hover:not(.disabled) {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--steam-text-white);
+}
+
+.nav-arrow-btn.disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.header-nav {
+  display: flex;
+  height: 100%;
+}
+
+.nav-link {
+  background: transparent;
+  border: none;
+  color: var(--steam-text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+  transition: all 0.15s ease;
+  font-family: 'Motiva Sans', sans-serif;
+}
+
+.nav-link:hover {
+  color: var(--steam-text-white);
+}
+
+.nav-link.active {
+  color: var(--steam-text-white);
+  border-bottom-color: var(--steam-blue);
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(102, 192, 244, 0.4);
+}
+
+.steam-window-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.steam-window-controls .control-btn {
+  background: transparent;
+  border: none;
+  color: var(--steam-text-muted);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border-radius: 2px;
+}
+
+.steam-window-controls .control-btn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--steam-text-white);
+}
+
+.steam-window-controls .control-btn.close-btn:hover {
+  background-color: #e81123;
+  color: white;
+}
+
+/* --- Store View (Magasin) --- */
+.store-container {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #1b2838;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.store-subheader {
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 3px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.store-menu-item {
+  color: var(--steam-text-muted);
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.store-menu-item:hover,
+.store-menu-item.active {
+  color: var(--steam-blue);
+}
+
+.store-search-bar {
+  margin-left: auto;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 2px 10px;
+}
+
+.store-search-bar input {
+  background: transparent;
+  border: none;
+  color: var(--steam-text-white);
+  outline: none;
+  font-size: 11px;
+  padding: 4px;
+}
+
+.store-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.store-section-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--steam-text-white);
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 8px;
+  font-weight: 700;
+}
+
+.store-featured-hero {
+  display: flex;
+  background-color: #0a0f14;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.store-featured-hero:hover {
+  transform: translateY(-2px);
+  border-color: rgba(102, 192, 244, 0.3);
+  box-shadow: 0 12px 36px rgba(102, 192, 244, 0.1), 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+.featured-hero-image {
+  flex: 1.6;
+  background-size: cover;
+  background-position: center;
+  min-height: 340px;
+}
+
+.featured-hero-details {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #0c1219;
+}
+
+.featured-hero-details h2 {
+  font-size: 24px;
+  color: var(--steam-text-white);
+  font-weight: 600;
+}
+
+.featured-hero-screenshots {
+  display: flex;
+  gap: 8px;
+}
+
+.featured-hero-screenshots .screenshot-thumb {
+  flex: 1;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.featured-hero-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.featured-hero-meta h3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--steam-text-muted);
+}
+
+.featured-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.featured-tag {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: var(--steam-text-main);
+  font-size: 10px;
+  padding: 4px 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.featured-hero-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 16px;
+}
+
+.price-tag {
+  background-color: #3b581b;
+  color: #bbf847;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+
+.platform-badges {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+/* Store CV Install Banner */
+.store-cv-banner {
+  background: linear-gradient(90deg, #1d3345 0%, #152431 100%);
+  border: 1px solid rgba(102, 192, 244, 0.25);
+  border-radius: 4px;
+  padding: 24px 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cv-banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.cv-banner-text h3 {
+  font-size: 20px;
+  color: var(--steam-text-white);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.cv-banner-text p {
+  font-size: 13px;
+  color: var(--steam-text-muted);
+}
+
+.steam-install-btn {
+  background: linear-gradient(to right, #75b022 5%, #588a1b 95%);
+  color: white;
+  text-decoration: none;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.steam-install-btn:hover {
+  background: linear-gradient(to right, #8ed629 5%, #6aa621 95%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.install-icon {
+  font-size: 18px;
+}
+
+/* Specials Cards */
+.store-specials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.store-special-card {
+  background-color: #0b1218;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.store-special-card:hover {
+  transform: scale(1.02);
+  border-color: rgba(102, 192, 244, 0.3);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.special-card-image {
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+}
+
+.special-card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.special-card-content h4 {
+  font-size: 16px;
+  color: var(--steam-text-white);
+  font-weight: 600;
+}
+
+.special-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+}
+
+.special-tag {
+  color: var(--steam-blue);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.special-status {
+  color: var(--steam-text-muted);
+}
+
+.special-card-price {
+  display: flex;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+/* --- Community View (Communauté) --- */
+.community-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 30px;
+  background: radial-gradient(circle at top left, #203342 0%, #15181e 60%);
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.community-header h1 {
+  font-size: 26px;
+  color: var(--steam-text-white);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.community-header p {
+  font-size: 13px;
+  color: var(--steam-text-muted);
+}
+
+.community-content {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* Left Column: Networks List */
+.community-networks-panel {
+  flex: 1.2;
+  background-color: rgba(23, 26, 33, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panel-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--steam-text-muted);
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.friends-list-header {
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.steam-user-status-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.user-avatar-wrapper {
+  position: relative;
+  width: 42px;
+  height: 42px;
+}
+
+.user-avatar-wrapper.larger {
+  width: 48px;
+  height: 48px;
+}
+
+.user-avatar-wrapper.online {
+  border: 2px solid #57cbde;
+  border-radius: 4px;
+  padding: 1px;
+  box-shadow: 0 0 10px rgba(87, 203, 222, 0.3);
+}
+
+.friend-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.friend-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.friend-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--steam-text-white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.friend-name.online {
+  color: #66c0f4;
+}
+
+.friend-status {
+  font-size: 11px;
+  margin-top: 1px;
+  font-weight: 500;
+}
+
+.friend-status.online {
+  color: #66c0f4;
+}
+
+.friend-activity {
+  font-size: 11px;
+  color: var(--steam-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+
+.friends-list-divider {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--steam-text-muted);
+  letter-spacing: 1px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.friends-grid-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.friend-item-link {
+  text-decoration: none;
+  display: block;
+}
+
+.friend-item-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  transition: all 0.2s ease;
+}
+
+.friend-item-row:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(102, 192, 244, 0.2);
+  box-shadow: 0 4px 12px rgba(102, 192, 244, 0.08);
+  transform: translateX(4px);
+}
+
+.friend-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.friend-row-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.friend-status-tag {
+  font-size: 9px;
+  background-color: rgba(102, 192, 244, 0.15);
+  color: #66c0f4;
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.friend-arrow-link {
+  color: var(--steam-text-muted);
+  font-size: 14px;
+  transition: color 0.2s, transform 0.2s;
+  opacity: 0.6;
+}
+
+.friend-item-row:hover .friend-arrow-link {
+  color: #66c0f4;
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+/* Right Column: LinkedIn API panel */
+.linkedin-api-panel {
+  flex: 1;
+  background-color: rgba(23, 26, 33, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.api-description {
+  font-size: 13px;
+  color: var(--steam-text-main);
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.api-test-button {
+  background: linear-gradient(to right, #477b96 5%, #345c72 95%);
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.api-test-button:hover:not(:disabled) {
+  background: linear-gradient(to right, #5c9ec0 5%, #427490 95%);
+  box-shadow: 0 4px 12px rgba(102, 192, 244, 0.2);
+}
+
+.api-test-button:disabled {
+  background: #2a353c;
+  color: #556672;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Terminal Styling */
+.terminal-console {
+  background-color: #0c0f12;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.5);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-header {
+  background-color: #1b2228;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.terminal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.terminal-dot.red { background-color: #ff5f56; }
+.terminal-dot.yellow { background-color: #ffbd2e; }
+.terminal-dot.green { background-color: #27c93f; }
+
+.terminal-title {
+  color: #7b8893;
+  font-size: 10px;
+  margin-left: 6px;
+  letter-spacing: 0.5px;
+}
+
+.terminal-body {
+  padding: 14px;
+  height: 180px;
+  overflow-y: auto;
+  font-size: 11px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.terminal-placeholder {
+  color: #556672;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.terminal-log {
+  word-break: break-word;
+}
+
+.terminal-log.info {
+  color: #79c0ff;
+}
+
+.terminal-log.warn {
+  color: #d29922;
+}
+
+.terminal-log.error {
+  color: #f85149;
+}
+
+.terminal-log.success {
+  color: #56d364;
+}
+
+.log-time {
+  color: #556672;
+}
+
+/* API Result card */
+.api-result-card {
+  border: 1px solid rgba(86, 211, 100, 0.2);
+  background-color: rgba(16, 28, 20, 0.8);
+  border-radius: 4px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.result-header {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #56d364;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(86, 211, 100, 0.1);
+  padding-bottom: 6px;
+}
+
+.result-profile {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.profile-badge-avatar {
+  background-color: #0a66c2;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(10, 102, 194, 0.4);
+}
+
+.profile-badge-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.profile-badge-details h4 {
+  font-size: 13px;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+.profile-badge-details p {
+  margin: 0;
+  font-size: 11px;
+}
+
+.profile-badge-details p.headline {
+  color: #a3b0bc;
+  line-height: 1.3;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.profile-badge-details p.location {
+  color: var(--steam-text-muted);
+}
+
+.profile-badge-details p.skills {
+  color: #66c0f4;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.profile-badge-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 8px;
+}
+
+.connections-count {
+  font-size: 11px;
+  color: #56d364;
+  font-weight: 600;
+}
+
+.view-profile-btn {
+  background-color: #0a66c2;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.view-profile-btn:hover {
+  background-color: #0077b5;
+}
+
+/* --- Profile View (Profil) --- */
+.profile-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 30px;
+  background: linear-gradient(to bottom, #1d2831 0%, #151e24 35%, #0f1418 100%);
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profile-user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(23, 26, 33, 0.4);
+  border-radius: 4px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  flex-wrap: wrap;
+  gap: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.user-avatar-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.user-avatar-frame {
+  width: 110px;
+  height: 110px;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.user-avatar-frame.online {
+  background: linear-gradient(to bottom, #57cbde 0%, #2f6973 100%);
+  box-shadow: 0 0 12px rgba(87, 203, 222, 0.35);
+}
+
+.user-avatar-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.user-text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-username {
+  font-size: 26px;
+  color: var(--steam-text-white);
+  font-weight: 700;
+}
+
+.profile-realname {
+  font-size: 13px;
+  color: var(--steam-text-main);
+}
+
+.profile-location {
+  font-size: 12px;
+  color: var(--steam-text-muted);
+}
+
+.profile-custom-status {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--steam-text-muted);
+  border-left: 2px solid var(--steam-blue);
+  padding-left: 12px;
+  margin-top: 8px;
+  max-width: 440px;
+}
+
+.user-level-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.level-badge-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #121a21;
+  border: 1px solid #3a808c;
+  border-radius: 50% 12% 50% 12%;
+  padding: 6px 16px;
+  font-weight: 700;
+  color: var(--steam-text-white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.level-number {
+  color: #57cbde;
+  font-size: 18px;
+}
+
+.level-progress-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.progress-badge {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: var(--steam-text-muted);
+  letter-spacing: 0.5px;
+}
+
+.featured-badge-display {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 8px 12px;
+  border-radius: 4px;
+  width: 170px;
+}
+
+.badge-icon {
+  font-size: 22px;
+}
+
+.badge-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--steam-text-white);
+}
+
+.badge-xp {
+  font-size: 10px;
+  color: var(--steam-text-muted);
+}
+
+.profile-content {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.profile-main-column {
+  flex: 2.2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-card-block {
+  background-color: rgba(23, 26, 33, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.block-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--steam-text-white);
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 8px;
+  font-weight: 700;
+}
+
+.bio-text p {
+  font-size: 13.5px;
+  color: var(--steam-text-main);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.bio-text p:last-child {
+  margin-bottom: 0;
+}
+
+.bio-text strong {
+  color: var(--steam-text-white);
+}
+
+.achievements-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+.achievement-icon-wrapper {
+  font-size: 26px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.achievement-details h4 {
+  font-size: 14px;
+  color: var(--steam-text-white);
+  font-weight: 600;
+}
+
+.achievement-details p {
+  font-size: 12px;
+  color: var(--steam-text-muted);
+}
+
+.profile-sidebar-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-sidebar-block {
+  background-color: rgba(23, 26, 33, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile-stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-stat-row {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid var(--steam-blue);
+  padding-left: 12px;
+}
+
+.stat-num {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--steam-text-white);
+  line-height: 1.2;
+}
+
+.stat-text {
+  font-size: 10px;
+  color: var(--steam-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.badges-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.badge-show-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.badge-row-icon {
+  font-size: 20px;
+}
+
+.badge-row-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-row-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--steam-text-white);
+}
+
+.badge-row-level {
+  font-size: 10px;
+  color: var(--steam-text-muted);
+  margin-top: 1px;
+}
+
+/* --- Mobile Responsive Queries for New Tabs --- */
+@media (max-width: 768px) {
+  /* Navigation adjustments */
+  .steam-header {
+    height: 48px;
+    padding: 0 10px;
+  }
+  
+  .nav-arrows {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+  }
+
+  .steam-window-controls {
+    display: none;
+  }
+
+  /* Containers positioning */
+  .store-container,
+  .community-container,
+  .profile-container {
+    padding: 75px 16px 16px 16px; /* Room for floating button */
+  }
+
+  /* Store Tab Mobile */
+  .featured-hero-image {
+    min-height: 180px;
+  }
+
+  .store-featured-hero {
+    flex-direction: column;
+  }
+
+  .cv-banner-content {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .steam-install-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Community Tab Mobile */
+  .community-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Profile Tab Mobile */
+  .profile-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .profile-user-header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .user-avatar-section {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .user-level-section {
+    align-items: center;
+    width: 100%;
+  }
+
+  .level-badge-box {
+    margin: 0 auto;
+  }
+
+  .featured-badge-display {
+    margin: 0 auto;
+  }
+}
+
 
 
 

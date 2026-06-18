@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import projectData from '../data/projects.json';
 const { categories, projects } = projectData;
 
-const Sidebar = ({ activeProject, setActiveProject, isSidebarOpen, setIsSidebarOpen }) => {
+const Sidebar = ({ activeProject, setActiveProject, isSidebarOpen }) => {
   const [openCategories, setOpenCategories] = useState({
     Scolaire: true,
     Perso: true

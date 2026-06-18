@@ -131,9 +131,12 @@ const MainView = ({ project, setActiveProject, onMenuToggle }) => {
           <div className="hero-actions">
             <button 
               className="play-button"
-              onClick={() => window.open(project.github, '_blank')}
+              onClick={() => {
+                const targetUrl = project.website || project.github;
+                window.open(targetUrl, '_blank');
+              }}
             >
-              ▶ JOUER (GitHub)
+              {project.website ? "▶ VISITER LE SITE" : "▶ JOUER (GitHub)"}
             </button>
             <div className="project-meta">
               <div>
