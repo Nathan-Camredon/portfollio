@@ -17,13 +17,7 @@
       },
       "github": "https://github.com",
       "markdownContent": "# Une Vie De Fourmi\n\nSimulation de colonie de fourmis en C++.\n\n## Fonctionnalités\n- Algorithmes de recherche de nourriture basés sur les phéromones.\n- Gestion des castes (reine, ouvrières, soldats).\n- Interface graphique minimaliste.",
-      "media": [
-        {
-          "type": "image",
-          "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1284",
-          "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=200"
-        }
-      ]
+      "media": []
     },
     {
       "id": "portfolio-v1",
@@ -109,16 +103,6 @@
       "github": "https://github.com/Nathan-Camredon/Pokemon",
       "markdownContent": "# Pokémon\n\nJeu de combat et d'exploration Pokémon développé en Python (Pygame).",
       "media": [
-        {
-          "type": "image",
-          "url": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1074",
-          "thumbnail": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=200"
-        },
-        {
-          "type": "image",
-          "url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1170",
-          "thumbnail": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=200"
-        },
         {
           "type": "image",
           "url": "/uml-pokemon.svg",
@@ -251,13 +235,7 @@
       },
       "github": "https://github.com/Nathan-Camredon/School_project",
       "markdownContent": "# Tic Tac Toe (Morpion)\n\nJeu du morpion développé en Python avec interface graphique (Tkinter / Pygame) pour un projet scolaire.",
-      "media": [
-        {
-          "type": "image",
-          "url": "https://images.unsplash.com/photo-1611890798517-0127e2724787?q=80&w=1170",
-          "thumbnail": "https://images.unsplash.com/photo-1611890798517-0127e2724787?q=80&w=200"
-        }
-      ]
+      "media": []
     },
     {
       "id": "wahiba",
@@ -272,23 +250,7 @@
       },
       "github": "https://wahiba.fr/",
       "markdownContent": "### Projet Wahiba : Application de Restauration Scolaire\n\n**Le Contexte**\nCette application web a été conçue pour répondre à un problème récurrent : le manque d'informations concernant les menus de la cantine et ses jours d'ouverture.\n\n**La Solution & Fonctionnalités**\n* **Espace Consommateur :** Une interface claire permettant aux utilisateurs de consulter facilement les menus et les plannings.\n* **Espace Administration :** * Tableau de bord pour récolter et analyser les avis des consommateurs.\n  * Système de gestion des stocks automatisé via le scan de codes-barres, interfacé avec l'API **OpenFoodFacts**.\n\n**L'Équipe & Mon Rôle**\nProjet collaboratif réalisé en équipe de 3 personnes. J'ai eu la responsabilité spécifique de :\n* Concevoir et développer le module complet de gestion de stock.\n* Gérer l'infrastructure technique : implémentation, configuration et déploiement sur un serveur VPS (sous Docker).\n* Assurer la maintenance technique continue du service.",
-      "media": [
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-          "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
-        },
-        {
-          "type": "image",
-          "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115",
-          "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=200"
-        },
-        {
-          "type": "image",
-          "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1170",
-          "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=200"
-        }
-      ]
+      "media": []
     },
     {
       "id": "SteamBundleBot",
@@ -303,23 +265,7 @@
       },
       "github": "https://github.com/Nathan-Camredon/SteamBundleBot",
       "markdownContent": "# SteamBundleBot 🚀🃏\n\nSteamBundleBot est un script d'automatisation Python conçu pour scanner le magasin Steam à la recherche de **Bundles** ou de jeux en promotion et déterminer leur **rentabilité nette** en fonction de la valeur de revente de leurs *Steam Trading Cards* sur le marché communautaire.\n\n## Fonctionnalités Principales\n\n- 🔍 **Scraping de Bundles Steam** : Récupère les packs et les offres disponibles directement sur le store Steam.\n- 📉 **Calcul de Rentabilité** : Interroge le Steam Community Market pour estimer la valeur moyenne des cartes. Déduit la taxe Steam (15%) pour vous indiquer le profit réel.\n- 🛡️ **Filtrage Intelligent** : Exclut automatiquement de l'analyse les jeux que vous possédez déjà sur votre compte afin de ne pas fausser le calcul (API Steam).\n- 💾 **Base de Données Locale** : Utilise SQLite pour mémoriser les bundles déjà scannés et les offres rentables.\n- ⏰ **Automatisation** : Script planifié pour tourner automatiquement tous les jours à 21h00.\n- 📩 **Notification Discord** : Envoie un *Rich Embed* via un Webhook Discord avec le détail et les profits générés par les offres trouvées.\n\n## Prérequis\n\n- **Python 3.10+**\n- Un compte Steam avec accès à l'API publique (une clé Web API).\n- Un serveur/salon Discord (pour les notifications Webhook).\n\n## Installation\n\n1. **Cloner le dépôt** :\n   ```bash\n   git clone https://github.com/Nathan-Camredon/SteamBundleBot.git\n   cd SteamBundleBot\n   ```\n\n2. **Installer les dépendances** :\n   ```bash\n   pip install -r requirements.txt\n   ```\n\n3. **Configuration de l'Environnement** :\n   Copiez le fichier d'exemple et remplissez-le avec vos informations :\n   ```bash\n   cp .env.example .env\n   ```\n   **Contenu du `.env`** :\n   - `STEAM_API_KEY` : Clé générée sur la page Steam API.\n   - `STEAM_ID` : Votre SteamID64 public.\n   - `DISCORD_WEBHOOK_URL` : L'URL de votre Webhook Discord (Créé dans les intégrations d'un salon Discord).\n\n## Utilisation\n\nLe projet est livré avec un environnement Docker prêt à l'emploi. C'est la méthode recommandée pour faire tourner le bot en tâche de fond (24h/24).\n\n### Option 1 : Avec Docker (Recommandé)\n\nLancez simplement le conteneur en arrière-plan via Docker Compose :\n```bash\ndocker-compose up -d\n```\n*Votre base de données `steambundlebot.db` sera sauvegardée en dehors du conteneur dans le dossier local `data/` afin de ne jamais perdre votre historique en cas de redémarrage.*\n\n### Option 2 : En Local (Standard)\n\nDémarrez simplement le script principal :\n```bash\npython main.py\n```\n\n*Note : L'algorithme intègre des mécanismes de `time.sleep()` pour scrupuleusement respecter les quotas d'appels de l'API Steam et vous éviter un blocage d'IP. Ne réduisez pas ces limites au risque de vous faire bannir de l'API Market.*\n\n## Architecture\n\nLe projet respecte les principes SOLID. Les dossiers sont structurés ainsi :\n- `src/` : Coeur métier (logique d'extraction, calculs, modèles `Game` & `Bundle`).\n- `src/utils/` : Connecteurs externes (Notifier Discord).\n- `data/` : Dossier contenant la base SQLite générée automatiquement.\n- `.agents/` : Mémoire et architecture IA pour l'aide au développement futur.\n\n## Contribution\n\nToutes les modifications doivent suivre le workflow Git suivant :\n1. Création d'une branche `feat/...` ou `fix/...` depuis la branche `preprod`.\n2. Fusion de la fonctionnalité validée sur `preprod`.\n3. Validation finale de `preprod` pour une mise en production sur `main`.\n",
-      "media": [
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-          "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
-        },
-        {
-          "type": "image",
-          "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115",
-          "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=200"
-        },
-        {
-          "type": "image",
-          "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1170",
-          "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=200"
-        }
-      ]
+      "media": []
     }
   ]
 }

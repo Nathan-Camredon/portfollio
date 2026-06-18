@@ -34,10 +34,11 @@ const StoreView = ({ setActiveTab, setActiveProject }) => {
           <div className="featured-hero-details">
             <h2>{spotlight.title}</h2>
             <div className="featured-hero-screenshots">
-              {spotlight.media && spotlight.media.slice(1, 3).map((m, i) => (
-                <div key={i} className="screenshot-thumb" style={{ backgroundImage: `url(${m.url})` }} />
-              ))}
-              {!spotlight.media && (
+              {spotlight.media && spotlight.media.length >= 3 ? (
+                spotlight.media.slice(1, 3).map((m, i) => (
+                  <div key={i} className="screenshot-thumb" style={{ backgroundImage: `url(${m.url})` }} />
+                ))
+              ) : (
                 <>
                   <div className="screenshot-thumb placeholder" />
                   <div className="screenshot-thumb placeholder" />
